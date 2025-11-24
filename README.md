@@ -7,7 +7,7 @@ im2v
 
 A simple CLI tool to convert images to video.
 
-The tool uses `ffprobe` and `ffmpeg` from [FFmpeg](https://ffmpeg.org/) to analyze the audio stream of the input video file. Make sure you have FFmpeg installed and accessible in your system's PATH.
+The tool uses `ffmpeg` from [FFmpeg](https://ffmpeg.org/) to analyze the audio stream of the input video file. Make sure you have FFmpeg installed and accessible in your system's PATH.
 
 Installation
 ------------
@@ -18,6 +18,8 @@ npm install -g im2v
 
 Usage
 -----
+
+Create mp4 video from a sequence of PNG images:
 
 ```
 im2v *.png output.mp4 -d 5
