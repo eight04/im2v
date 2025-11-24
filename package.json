@@ -1,0 +1,33 @@
+{
+  "name": "im2v",
+  "version": "0.0.0",
+  "description": "Convert image sequences to video files using ffmpeg",
+  "author": "eight04 <eight04@gmail.com>",
+  "license": "Unlicense",
+  "scripts": {
+    "lint": "eslint . --cache",
+    "test": "npm run lint",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "bin": {
+    "im2v": "cli.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "execa": "^9.6.0",
+    "tiny-glob": "^0.2.9",
+    "tmp-promise": "^3.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "shx": "^0.4.0"
+  },
+  "repository": "eight04/im2v",
+  "type": "module"
+}
