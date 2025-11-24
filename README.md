@@ -20,7 +20,7 @@ Usage
 -----
 
 ```
-im2v -i *.png -o output.mp4 -d 5
+im2v *.png output.mp4 -d 5
 ```
 
 Changelog

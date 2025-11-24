@@ -15,8 +15,8 @@ const parser = new ArgumentParser({
 });
 
 parser.add_argument('-v', '--version', {action: 'version', version: pkg.version});
-parser.add_argument('-i', '--input', {help: 'Input file(s) (supports glob patterns)', required: true, nargs: '+'});
-parser.add_argument('-o', '--output', {help: 'Output file', required: true});
+parser.add_argument('input', {help: 'Input file(s) (supports glob patterns)', nargs: '+'});
+parser.add_argument('output', {help: 'Output file'});
 parser.add_argument('-d', '--delay', {help: 'Delay between images in seconds', default: 1, type: Number});
 
 const args = parser.parse_args();
