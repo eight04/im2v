@@ -1,6 +1,6 @@
 {
   "name": "im2v",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert image sequences to video files using ffmpeg",
   "author": "eight04 <eight04@gmail.com>",
   "license": "Unlicense",
