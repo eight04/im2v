@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: latest
       - run: npm cit
-      - uses: codecov/codecov-action@v5
-        with:
-          fail_ci_if_error: true
-          verbose: true
+      # - uses: codecov/codecov-action@v5
+      #   with:
+      #     fail_ci_if_error: true
+      #     verbose: true
